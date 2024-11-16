@@ -31,6 +31,46 @@
   a:hover {
     color: #ec4899; /* ホバー時に色を変更 */
   }
-  h1{
-    color:#16f2b3
+  #title{
+    color:#16f2b3;
+    font-size: x-large;
+  }
+  header {
+    background-color: #0d1224;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  header h1 a {
+    text-decoration: none;
+    color: #2dd4bf;
+  }
+  
+  header h1 a:hover {
+    color: #14b8a6;
+  }
+  
+  header nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin-left: 1.5rem;
+  }
+  
+  header nav a:hover {
+    color: white;
+  }
+  body{
+    background-color: #101123; /* ダークな背景 */
+    --text-white: #ffffff;  /* 文字色を白に */
+    --text-light: #f0f0f0;  /* 明るい灰色 */  
+    --background-body: #0d1224;
+    --background-body-tertiary: transparent;
+    --scroll-track-background: #0d1224;
+    --scroll-thumb-background: #606060;
+    --scroll-thumb-hover: #d6d6d6;
+    --brand-name-100: #16f2b3;
+    --brand-name-200: #ec4899;
+    --text-white: #ffffff;  /* 文字色を白に */
+    --text-light: #f0f0f0;  /* 明るい灰色 */
+    --glow-card-background: #101123;
   }

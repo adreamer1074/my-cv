@@ -10,7 +10,7 @@ module.exports = {
       },
       colors: {
         'dark-background': 'var(--background-body)',
-        'dark-text': 'var(--text-white)',
+        // 'dark-text': 'var(--text-white)',
         // Add other custom colors or themes as needed
       },
       backgroundImage: {
