@@ -18,7 +18,8 @@
   ng generate service data
 
 
+・FontAwesome のインストール 
+  npm install --save @fortawesome/fontawesome-free
 
-Tailwind CSS のカスタマイズで、よりスタイリッシュなデザインに。
-アイコンやアニメーションを追加（FontAwesome や Animate.css を利用）。
-画像や背景の調整で個性を出す。
+・Animate.css のインストール
+　　npm install animate.css --save

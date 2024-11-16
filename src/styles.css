@@ -1,4 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+[data-bs-theme="dark"] {
+    --background-body: #0d1224;
+    --background-body-tertiary: transparent;
+    --scroll-track-background: #0d1224;
+    --scroll-thumb-background: #606060;
+    --scroll-thumb-hover: #d6d6d6;
+    --brand-name-100: #16f2b3;
+    --brand-name-200: #ec4899;
+    --text-white: #ffffff;  /* 文字色を白に */
+    --text-light: #f0f0f0;  /* 明るい灰色 */
+    --glow-card-background: #101123;
+  }
+  
+  body[data-bs-theme="dark"] {
+    background-color: var(--background-body);
+    color: var(--text-white); /* 通常のテキストを白に */
+  }
+  
+  header, footer {
+    background-color: #101123; /* ダークな背景 */
+  }
+  
+  h1, h2, h3, p {
+    color: var(--text-light); /* 見出しやテキストの色を明るい灰色に */
+  }
+  
+  a {
+    color: #16f2b3; /* リンクを明るい色に */
+  }
+  
+  a:hover {
+    color: #ec4899; /* ホバー時に色を変更 */
+  }
+  h1{
+    color:#16f2b3
+  }
