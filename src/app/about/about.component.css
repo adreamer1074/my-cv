@@ -1,0 +1,202 @@
+
+/* 見出しスタイル */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+
+  }
+  .text-pink-500 {
+    color: #ec4899; /* 強調するピンク色 */
+  }
+  
+  .text-teal-400 {
+    color: #4fd1c5; /* 強調するティール色 */
+  }
+  
+  /* 画像スタイル */
+  .developer-image {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .developer-image:hover {
+    transform: scale(1.1); /* ホバー時のズーム効果 */
+  }
+  
+  /* レイアウト調整 */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* 全体の背景・テキスト色 */
+body {
+    background-color: #0d1224; /* 暗めのネイビー背景 */
+    color: #ffffff; /* 白テキスト */
+  }
+  
+  .text-pink-500 {
+    color: #ec4899; /* 差し色ピンク */
+  }
+  
+  .text-teal-400 {
+    color: #4fd1c5; /* 差し色ティール */
+  }
+  
+  .text-gray-400 {
+    color: #d1d5db; /* ライトグレー */
+  }
+  
+  /* 画像アニメーション */
+  .developer-image {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+  }
+  
+  .developer-image:hover {
+    transform: scale(1.1) translateY(-10px); /* ホバーで拡大・浮き上がる */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* カスタムアニメーション */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .hover:animate-float:hover {
+    animation: float 2s infinite;
+  }
+
+
+/* Education セクションのデザイン */
+.text-white {
+  color: white;
+}
+
+.text-pink-500 {
+  color: #ff80bf;
+}
+
+.text-pink-400 {
+  color: #ff99c8;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.p-8 {
+  padding: 10px 10px 4px 10px;
+}
+
+.w-8{
+  width: 40%;
+
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+/* BOX STYLE */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+}
+
+.from-pink-500 {
+  --tw-gradient-from: #ff80bf;
+}
+
+.to-teal-500 {
+  --tw-gradient-to: #20c997;
+}
+
+.opacity-10 {
+  opacity: 0.2;
+}
+
+/* 教育セクションの親要素にスペースを調整 */
+.space-y-12 > * + * {
+  margin-top: 2rem;
+}
+
+.items-start {
+  align-items: flex-start;
+}
