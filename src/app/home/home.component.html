@@ -1,4 +1,101 @@
 <div class="container">
-  <h1 class="text-4xl font-bold text-teal-400">Welcome to the Home Page!</h1>
-  <p>This is the content of the home page.</p>
-</div>
+  <div class="introductory-section flex flex-col lg:flex-row items-center justify-between">
+    <h3 class="text-xl font-bold">Hi There! 👋🏻 <br>
+      I'M <span class="text-teal-400">Adreamer</span> </h3>
+
+    <div class="lg:w-1/2 space-y-6">
+      <p class="text-lg">
+        LET ME INTRODUCE <span class="text-teal-400">MYSELF</span>
+      </p>
+      <p class="text-lg">
+        I am someone who enjoys creating things,<br> which led me to pursue a career in the information technology industry.
+      </p>
+      <p class="text-lg">
+        My current role is as a <span class="text-pink-500">backend developer, </span>
+        <br>but in my personal projects, I really enjoy building websites using <span class="text-pink-500">TypeScript </span> and <span class="text-pink-500">Angular </span> on the front end.
+        <br> In the future, I may also explore developing mobile apps.
+      </p>
+    </div>
+  </div>
+  <section class="bg-[#0d1224] text-white py-12">
+    <h3 class="text-3xl font-bold">Experiences</h3> <!-- Title with margin-bottom -->
+    <div class="container mx-auto text-left"> <!-- Keep text-left for left alignment -->
+      <!-- タイトル -->
+
+      <!-- カード１ -->
+      <div class="bg-[#1a2035] rounded-lg shadow-md p-8 w-8 relative overflow-hidden mb-8">
+        <!-- Beforeエフェクト -->
+        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-teal-500 opacity-10 rounded-lg"></div>
+
+        <div class="relative z-10">
+          <p class="text-pink-400 mb-2 text-lg text-center">2024/06 - Present</p>
+          <div class="flex-1 items-center justify-start space-x-4 mb-2">
+            <!-- アイコン -->
+            <div class="text-pink-500 text-4xl"><img src="assets/images/badge.png" alt="Developer SVG"></div>
+            <p class="text-xl font-semibold"></p>
+            <p class="text-gray-300 text-lg">
+              PHP BackEnd Developer <br>Mush Up Brain Co., Ltd.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <br />
+      <!-- カード２ -->
+      <div class="bg-[#1a2035] rounded-lg shadow-md p-8 w-8 relative overflow-hidden">
+        <!-- Beforeエフェクト -->
+        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-teal-500 opacity-10 rounded-lg"></div>
+
+        <div class="relative z-10">
+          <p class="text-pink-400 mb-2 text-lg text-center">2024/11 - Present</p>
+          <div class="flex-1 items-center justify-start space-x-4 mb-2">
+            <!-- アイコン -->
+            <div class="text-pink-500 text-4xl"><img src="assets/images/badge.png" alt="Developer SVG"></div>
+            <p class="text-xl font-semibold"></p>
+            <p class="text-gray-300 text-lg">
+              Create RPA scenarios for local authority municipality <br>Mush Up Brain Co., Ltd.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills -->
+  <section class="bg-[#0d1224] text-white py-12">
+    <h3 class="text-3xl font-bold text-center mb-8">Skills</h3>
+    <div class="wrapper">
+      <!-- Skill Card -->
+      <div class="skill-card"><img src="assets/images/php.png" alt="PHP" width="60" height="60">
+        <p class="skill-name">PHP(Laravel/Codeignitor)</p>
+      </div>
+      <!-- Skill Card -->
+      <div class="skill-card"><img src="assets/images/python.svg" alt="Python" width="60" height="60">
+        <p class="skill-name">Python</p>
+      </div>
+      <!-- Skill Card -->
+      <div class="skill-card"><img src="/assets/images/typescript.svg" alt="Typescript" width="60" height="60">
+        <p class="skill-name">Typescript</p>
+      </div>
+      <!-- Skill Card -->
+      <div class="skill-card"><img src="/assets/images/angular.png" alt="Angular" width="60" height="60">
+        <p class="skill-name">Angular</p>
+      </div>
+      <!-- Skill Card -->
+      <div class="skill-card"><img src="/assets/images/aws.svg" alt="AWS" width="60" height="60" id="aws">
+        <p class="skill-name">AWS</p>
+      </div>
+      <!-- Skill Card -->
+      <div class="skill-card"><img src="/assets/images/docker.svg" alt="docker" width="60" height="60" id="docker">
+        <p class="skill-name">Docker</p>
+      </div>
+      <!-- Skill Card -->
+      <div class="skill-card"><img src="/assets/images/mysql.svg" alt="MySQL" width="60" height="60">
+        <p class="skill-name">MySQL</p>
+      </div>
+      <!-- Skill Card -->
+      <div class="skill-card"><img src="/assets/images/rpa.png" alt="RPA" width="60" height="60" id="rpa">
+        <p class="skill-name">Automation</p>
+      </div>
+    </div>
+  </section>

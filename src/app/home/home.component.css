@@ -2,3 +2,46 @@ body{
     background-color: #101123; /* ダークな背景 */
 
   }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3列グリッド */
+    grid-gap: 20px; /* カード間のスペース */
+    padding: 20px;
+  }
+  
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7a3862; /* ボーダーの色 */
+    background-color: #1a1f36; /* 背景色 */
+    color: white;
+    border-radius: 12px; /* カードの角丸 */
+    font-size: 1.25rem; /* テキストサイズ */
+    text-align: center;
+    transition: all 0.3s ease; /* ホバー時のアニメーション */
+    opacity: 0.9;
+  }
+  
+  .skill-card img {
+    width: 50px; /* アイコンの幅 */
+    height: 50px; /* アイコンの高さ */
+    margin-bottom: 10px; /* アイコンとテキストの間隔 */
+    margin-top: 5px; /* アイコンとテキストの間隔 */
+
+  }
+  
+  .skill-card:hover {
+    border-color: #4ade80; /* ホバー時のボーダー色 */
+    box-shadow: 0px 4px 15px rgba(74, 222, 128, 0.3); /* ホバー時のシャドウ */
+    transform: translateY(-5px); /* ホバー時に少し浮く */
+  }
+  
+  .skill-card p {
+    font-weight: bold; /* テキストを太字に */
+    margin: 0;
+  }
+  #rpa{
+    background-color: white; /* ダークな背景 */
+  }
