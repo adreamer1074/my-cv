@@ -3,70 +3,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 
-  body[data-bs-theme="dark"] {
-    background-color: var(--background-body);
-    color: var(--text-white); /* 通常のテキストを白に */
+body[data-bs-theme="dark"] {
+  background-color: var(--background-body);
+  color: var(--text-white);
+  /* 通常のテキストを白に */
+}
+
+/* モバイル対応: 画面幅が640px未満のとき1列、～1024pxで2列など */
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  header, footer {
-    background-color: #101123; /* ダークな背景 */
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    grid-template-columns: 1fr;
   }
-  
-  h1, h2, h3, p {
-    color: var(--text-light); /* 見出しやテキストの色を明るい灰色に */
+
+  /* BOX STYLE */
+  .relative {
+    position: relative;
+    transition: all 0.3s ease;
+    /* ホバー時のアニメーション */
+    min-width: 200px;
   }
-  
-  a {
-    color: #16f2b3; /* リンクを明るい色に */
-  }
-  
-  a:hover {
-    color: #ec4899; /* ホバー時に色を変更 */
-  }
-  #title{
-    color:#16f2b3;
-    font-size: x-large;
-  }
-  header {
-    background-color: #0d1224;
-    color: white;
-    padding: 1rem 0;
-  }
-  
-  header h1 a {
-    text-decoration: none;
-    color: #2dd4bf;
-  }
-  
-  header h1 a:hover {
-    color: #14b8a6;
-  }
-  
-  header nav a {
-    color: #9ca3af;
-    text-decoration: none;
-    margin-left: 1.5rem;
-  }
-  
-  header nav a:hover {
-    color: white;
-  }
-  body{
-    background-color: #101123; /* ダークな背景 */
-    --text-white: #ffffff;  /* 文字色を白に */
-    --text-light: #f0f0f0;  /* 明るい灰色 */  
-    --background-body: #0d1224;
-    --background-body-tertiary: transparent;
-    --scroll-track-background: #0d1224;
-    --scroll-thumb-background: #606060;
-    --scroll-thumb-hover: #d6d6d6;
-    --brand-name-100: #16f2b3;
-    --brand-name-200: #ec4899;
-    --text-white: #ffffff;  /* 文字色を白に */
-    --text-light: #f0f0f0;  /* 明るい灰色 */
-    --glow-card-background: #101123;
-  }
-ul{
+
+}
+
+
+header,
+footer {
+  background-color: #101123;
+  /* ダークな背景 */
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--text-light);
+  /* 見出しやテキストの色を明るい灰色に */
+}
+
+a {
+  color: #16f2b3;
+  /* リンクを明るい色に */
+}
+
+a:hover {
+  color: #ec4899;
+  /* ホバー時に色を変更 */
+}
+
+#title {
+  color: #16f2b3;
+  font-size: x-large;
+}
+
+header {
+  background-color: #0d1224;
+  color: white;
+  padding: 1rem 0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #2dd4bf;
+}
+
+header h1 a:hover {
+  color: #14b8a6;
+}
+
+header nav a {
+  color: #9ca3af;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+body {
+  background-color: #101123;
+  /* ダークな背景 */
+  --text-white: #ffffff;
+  /* 文字色を白に */
+  --text-light: #f0f0f0;
+  /* 明るい灰色 */
+  --background-body: #0d1224;
+  --background-body-tertiary: transparent;
+  --scroll-track-background: #0d1224;
+  --scroll-thumb-background: #606060;
+  --scroll-thumb-hover: #d6d6d6;
+  --brand-name-100: #16f2b3;
+  --brand-name-200: #ec4899;
+  --text-white: #ffffff;
+  /* 文字色を白に */
+  --text-light: #f0f0f0;
+  /* 明るい灰色 */
+  --glow-card-background: #101123;
+}
+
+ul {
   color: white;
 }
 
@@ -74,12 +115,17 @@ ul{
 body {
   padding: 0 16px;
   font-family: 'Poppins', sans-serif;
-  color: #ffffff; /* 白文字 */
-  background-color: #0d1224; /* 暗い背景色 */
-  line-height: 1.8; /* 読みやすい行間 */
+  color: #ffffff;
+  /* 白文字 */
+  background-color: #0d1224;
+  /* 暗い背景色 */
+  line-height: 1.8;
+  /* 読みやすい行間 */
 }
+
 h1 span {
-  color: #ec4899; /* ピンクで強調 */
+  color: #ec4899;
+  /* ピンクで強調 */
 }
 
 h2 {
@@ -90,15 +136,19 @@ h2 {
 
 /* 本文テキスト */
 p {
-  font-size: 1.125rem; /* 標準的なサイズ */
+  font-size: 1.125rem;
+  /* 標準的なサイズ */
   font-weight: 400;
-  color: #d1d5db; /* 明るいグレー */
+  color: #d1d5db;
+  /* 明るいグレー */
 }
 
 /* 強調テキスト */
 p span {
-  color: #4fd1c5; /* ティールで強調 */
-  font-weight: 600; /* 少し太め */
+  color: #4fd1c5;
+  /* ティールで強調 */
+  font-weight: 600;
+  /* 少し太め */
 }
 
 /* リスト */
@@ -114,7 +164,8 @@ ul li {
 /* 名言スタイル */
 p.italic {
   font-style: italic;
-  color: #ec4899; /* ピンク */
+  color: #ec4899;
+  /* ピンク */
   text-align: center;
   font-weight: 500;
   margin-top: 1.5rem;
@@ -129,33 +180,40 @@ p.signature {
 
 /* リンクのスタイル */
 a {
-  color: #4fd1c5; /* ティール */
-  text-decoration: none; /* 下線を消す */
+  color: #4fd1c5;
+  /* ティール */
+  text-decoration: none;
+  /* 下線を消す */
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ec4899; /* ホバー時にピンク */
+  color: #ec4899;
+  /* ホバー時にピンク */
 }
 
 /* 見出しスタイル */
 h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-    line-height: 1.2;
-  }
-  h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
 
-  }
-  .text-pink-500 {
-    color: #ec4899; /* 強調するピンク色 */
-  }
-  
-  .text-teal-400 {
-    color: #4fd1c5; /* 強調するティール色 */
-  }
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+
+}
+
+.text-pink-500 {
+  color: #ec4899;
+  /* 強調するピンク色 */
+}
+
+.text-teal-400 {
+  color: #4fd1c5;
+  /* 強調するティール色 */
+}
 
 
 /* Education セクションのデザイン */
@@ -187,10 +245,11 @@ h1 {
   padding: 10px 10px 4px 10px;
 }
 
-.w-8{
+.w-8 {
   width: 40%;
 
 }
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -233,13 +292,15 @@ h1 {
   align-items: center;
 }
 
-.space-x-4 > * + * {
+.space-x-4>*+* {
   margin-left: 1rem;
 }
+
 /* BOX STYLE */
 .relative {
   position: relative;
-  transition: all 0.3s ease; /* ホバー時のアニメーション */
+  transition: all 0.3s ease;
+  /* ホバー時のアニメーション */
 }
 
 .absolute {
@@ -255,7 +316,7 @@ h1 {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
-  
+
 }
 
 .from-pink-500 {
