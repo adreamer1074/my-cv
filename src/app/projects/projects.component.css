@@ -1,71 +1,107 @@
-body{
-    background-color: #101123; /* ダークな背景 */
+body {
+  background-color: #101123;
+  /* ダークな背景 */
 
-  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3列グリッド */
+  grid-gap: 20px;
+  /* カード間のスペース */
+  padding: 0px;
+}
+
+/* モバイル対応: 画面幅が640px未満のとき1列、～1024pxで2列など */
+@media (max-width: 1024px) {
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3列グリッド */
-    grid-gap: 20px; /* カード間のスペース */
-    padding: 0px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 500px; /* アイコンの高さ */
-    align-items: center;
-    border: 1px solid #7a3862; /* ボーダーの色 */
-    background-color: #1a1f36; /* 背景色 */
-    color: white;
-    border-radius: 12px; /* カードの角丸 */
-    font-size: 1.25rem; /* テキストサイズ */
-    text-align: center;
-    transition: all 0.3s ease; /* ホバー時のアニメーション */
-    opacity: 0.9;
-  }
-  
-.project-card img {
-    margin-bottom: auto; /* アイコンとテキストの間隔 */
-    margin-top: 10px; /* アイコンとテキストの間隔 */
-    width: auto; /* アイコンの幅 */
 }
-  
-  .project-card:hover {
-    border-color: #4ade80; /* ホバー時のボーダー色 */
-    box-shadow: 0px 4px 15px rgba(74, 222, 128, 0.3); /* ホバー時のシャドウ */
-    transform: translateY(-5px); /* ホバー時に少し浮く */
+
+@media (max-width: 640px) {
+  .wrapper {
+    grid-template-columns: 1fr;
   }
-  
-  .project-card p {
-    font-weight: bold; /* テキストを太字に */
-    margin: 0;
-  }
-  #rpa{
-    background-color: white; /* ダークな背景 */
-  }
-.button-group{
-    display: flex;
-    justify-content: flex-start;
-    margin-top: auto;
-    margin-right: 45%;
-    margin-bottom: 10px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  /* アイコンの高さ */
+  align-items: center;
+  border: 1px solid #7a3862;
+  /* ボーダーの色 */
+  background-color: #1a1f36;
+  /* 背景色 */
+  color: white;
+  border-radius: 12px;
+  /* カードの角丸 */
+  font-size: 1.25rem;
+  /* テキストサイズ */
+  text-align: center;
+  transition: all 0.3s ease;
+  /* ホバー時のアニメーション */
+  opacity: 0.9;
+}
+
+.project-card img {
+  margin-bottom: auto;
+  /* アイコンとテキストの間隔 */
+  margin-top: 10px;
+  /* アイコンとテキストの間隔 */
+  width: auto;
+  /* アイコンの幅 */
+}
+
+.project-card:hover {
+  border-color: #4ade80;
+  /* ホバー時のボーダー色 */
+  box-shadow: 0px 4px 15px rgba(74, 222, 128, 0.3);
+  /* ホバー時のシャドウ */
+  transform: translateY(-5px);
+  /* ホバー時に少し浮く */
+}
+
+.project-card p {
+  font-weight: bold;
+  /* テキストを太字に */
+  margin: 0;
+}
+
+#rpa {
+  background-color: white;
+  /* ダークな背景 */
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: auto;
+  margin-right: 45%;
+  margin-bottom: 10px;
 
 }
-.btn-primary{
-    padding: 10px;
-    border: 1px solid #7a3862;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    border-radius: 12px;
+
+.btn-primary {
+  padding: 10px;
+  border: 1px solid #7a3862;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 12px;
 }
-.text{
-    color: white;
-    font-size: 1rem;
-    text-align: justify;
-    padding: 5px 10px 10px 10px;
+
+.text {
+  color: white;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 5px 10px 10px 10px;
 }
-.project-name{
-    color: white;
+
+.project-name {
+  color: white;
 }
